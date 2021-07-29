@@ -53,6 +53,13 @@
 		<java.version>16</java.version>
 		<maven.compiler.source>14</maven.compiler.source>
 		<maven.compiler.target>14</maven.compiler.target>
+		
+		
+  <sonar.projectKey>Juandieruiz_Proyecto-1-Java-Avanzado</sonar.projectKey>
+  <sonar.organization>juandieruiz</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+ 
+
 	</properties>
 
 	<!-- Dependencias base Spring -->
