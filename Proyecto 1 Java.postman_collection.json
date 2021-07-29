@@ -1,0 +1,711 @@
+{
+	"info": {
+		"_postman_id": "c8a31780-a16e-4fcf-8e79-53553b619084",
+		"name": "Proyecto 1 Java",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Vehicles",
+			"item": [
+				{
+					"name": "api/vehicles",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Electric",
+			"item": [
+				{
+					"name": "/api/vehicles/electric",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/electric",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"electric"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/vehicles/electric/start/1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/electric/start/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"electric",
+								"start",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/vehicles/electric",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"model\": \"Tesla 500 prueba\",\r\n    \"color\": \"Negro\",\r\n    \"numDoors\": 2,\r\n    \"engine\": {\r\n        \"id\": 1,\r\n        \"type\": \"100Kv\",\r\n        \"statusEngine\": true\r\n    },\r\n    \"battery\": {\r\n        \"id\": 1,\r\n        \"capacity\": true\r\n    },\r\n    \"airAconditioner\": true,\r\n    \"autoPilot\": {\r\n        \"id\": 1,\r\n        \"automaticTime\": 0.0\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/combustion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"combustion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/vehicles/electric",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 0,\r\n    \"model\": \"Tesla XRR\",\r\n    \"color\": \"Negro\",\r\n    \"numDoors\": 2,\r\n    \"engine\": {\r\n        \"id\": 1,\r\n        \"type\": \"100Kv\",\r\n        \"statusEngine\": true\r\n    },\r\n    \"battery\": {\r\n        \"id\": 1,\r\n        \"capacity\": true\r\n    },\r\n    \"airAconditioner\": true,\r\n    \"autoPilot\": {\r\n        \"id\": 1,\r\n        \"automaticTime\": 0.0\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/electric",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"electric"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/vehicles/electric/4",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/electric/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"electric",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindByColor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/electric/color/Black",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"electric",
+								"color",
+								"Black"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindByNumDoors",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/electric/numDoors/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"electric",
+								"numDoors",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/electric/name/Tesla X",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"electric",
+								"name",
+								"Tesla X"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hybrid",
+			"item": [
+				{
+					"name": "/api/vehicles/hybrid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/hybrid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"hybrid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/vehicles/hybrid/start/1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"model\": \"BMW123\",\r\n    \"color\": \"Azul\",\r\n    \"numDoors\": 4,\r\n    \"engine\": {\r\n        \"id\": 1,\r\n        \"type\": \"HybridMotor\",\r\n        \"statusEngine\": false\r\n    },\r\n    \"battery\": {\r\n        \"id\": 1,\r\n        \"capacity\": false\r\n    },\r\n    \"airAconditioner\": false,\r\n    \"hydrogenTank\": {\r\n        \"id\": 1,\r\n        \"type\": \"capacityTank\",\r\n        \"capacity\": 100\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/hybrid/start/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"hybrid",
+								"start",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/vehicles/hybrid",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 1,\r\n        \"model\": \"BMW X6\",\r\n        \"color\": \"Azul\",\r\n        \"numDoors\": 4,\r\n        \"engine\": {\r\n            \"id\": 1,\r\n            \"type\": \"HybridMotor\",\r\n            \"statusEngine\": true\r\n        },\r\n        \"battery\": {\r\n            \"id\": 1,\r\n            \"capacity\": true\r\n        },\r\n        \"airAconditioner\": true,\r\n        \"hydrogenTank\": {\r\n            \"id\": 1,\r\n            \"type\": \"capacityTank\",\r\n            \"capacity\": 100\r\n        }\r\n    },\r\n    {\r\n        \"id\": 1,\r\n        \"model\": \"BMW\",\r\n        \"color\": \"Rojo\",\r\n        \"numDoors\": 4,\r\n        \"engine\": {\r\n            \"id\": 1,\r\n            \"type\": \"HybridMotor\",\r\n            \"statusEngine\": true\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/hybrid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"hybrid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/vehicles/hybrid",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 0,\r\n        \"model\": \"BMW NUEVO POST\",\r\n        \"color\": \"Azul\",\r\n        \"numDoors\": 4,\r\n        \"engine\": {\r\n            \"id\": 1,\r\n            \"type\": \"HybridMotor\",\r\n            \"statusEngine\": true\r\n        },\r\n        \"battery\": {\r\n            \"id\": 1,\r\n            \"capacity\": true\r\n        }}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/hybrid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"hybrid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/vehicles/electric/4",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/electric/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"electric",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindByNumDoors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/combustion/numDoors/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"combustion",
+								"numDoors",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FinByColor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/hybrid/color/Black",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"hybrid",
+								"color",
+								"Black"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindByColor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/hybrid/name/BMW",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"hybrid",
+								"name",
+								"BMW"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Combustion",
+			"item": [
+				{
+					"name": "/api/vehicles/combustion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/electric/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"electric",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/vehicles/combustion/start/1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"model\": \"Audi Z4\",\r\n    \"color\": \"Rojo\",\r\n    \"numDoors\": 4,\r\n    \"engine\": {\r\n        \"id\": 1,\r\n        \"type\": \"70-PowerHorse\",\r\n        \"statusEngine\": true\r\n    },\r\n    \"battery\": {\r\n        \"id\": 1,\r\n        \"capacity\": true\r\n    },\r\n    \"airAconditioner\": true,\r\n    \"fuel\": {\r\n        \"id\": 1,\r\n        \"capacity\": 12.5\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/combustion/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"combustion",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/vehicles/combustion",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 5,\r\n    \"model\": \"Audi Prueba 123\",\r\n    \"color\": \"Rojo\",\r\n    \"numDoors\": 4,\r\n    \"engine\": {\r\n        \"id\": 1,\r\n        \"type\": \"70-PowerHorse\",\r\n        \"statusEngine\": true\r\n    },\r\n    \"battery\": {\r\n        \"id\": 1,\r\n        \"capacity\": true\r\n    },\r\n    \"airAconditioner\": true,\r\n    \"fuel\": {\r\n        \"id\": 1,\r\n        \"capacity\": 12.5\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/combustion/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"combustion",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/vehicles/combustion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 0,\r\n        \"model\": \"Audi NUEVO POST\",\r\n        \"color\": \"Rojo\",\r\n        \"numDoors\": 4,\r\n        \"engine\": {\r\n            \"id\": 1,\r\n            \"type\": \"70-PowerHorse\",\r\n            \"statusEngine\": true\r\n        },\r\n        \"battery\": {\r\n            \"id\": 1,\r\n            \"capacity\": true\r\n        },\r\n        \"airAconditioner\": true,\r\n        \"fuel\": {\r\n            \"id\": 1,\r\n            \"capacity\": 12.5\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/combustion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"combustion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/vehicles/combustion/4",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"model\": \"Tesla 500\",\r\n    \"color\": \"Negro\",\r\n    \"numDoors\": 2,\r\n    \"engine\": {\r\n        \"id\": 1,\r\n        \"type\": \"100Kv\",\r\n        \"statusEngine\": true\r\n    },\r\n    \"battery\": {\r\n        \"id\": 1,\r\n        \"capacity\": true\r\n    },\r\n    \"airAconditioner\": true,\r\n    \"autoPilot\": {\r\n        \"id\": 1,\r\n        \"automaticTime\": 0.0\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/combustion/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"combustion",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindByColor",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/combustion/color/Black",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"combustion",
+								"color",
+								"Black"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindByNumDoors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/combustion/numDoors/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"combustion",
+								"numDoors",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/combustion/name/Audi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles",
+								"combustion",
+								"name",
+								"Audi"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

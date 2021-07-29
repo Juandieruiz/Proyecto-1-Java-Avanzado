@@ -1,0 +1,24 @@
+{
+    "id": 0,
+    "name": "Nuevo telefono POSTMANPHONE",
+    "ram": {
+        "id": 4,
+        "type": "DDR6",
+        "gigabytes": 32
+    },
+    "battery": {
+        "id": 3,
+        "capacity": 9500.0
+    },
+    "cpu": {
+        "id": 4,
+        "on": false,
+        "cores": 16
+    },
+    "wifi": true,
+    "camera": {
+        "id": 3,
+        "model": "front camera",
+        "megapixels": 58.5
+    }
+}

@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "One plus 9",
+        "ram": {
+            "id": 1,
+            "type": "DDR4",
+            "gigabytes": 8
+        },
+        "battery": {
+            "id": 1,
+            "capacity": 4500.0
+        },
+        "cpu": {
+            "id": 1,
+            "on": false,
+            "cores": 4
+        },
+        "wifi": true,
+        "camera": {
+            "id": 1,
+            "model": "front camera",
+            "megapixels": 12.5
+        }
+    },
+    {
+        "id": 2,
+        "name": "IPhone X",
+        "ram": {
+            "id": 2,
+            "type": "DDR3",
+            "gigabytes": 4
+        },
+        "battery": {
+            "id": 2,
+            "capacity": 3500.0
+        },
+        "cpu": {
+            "id": 2,
+            "on": false,
+            "cores": 2
+        },
+        "wifi": true,
+        "camera": {
+            "id": 2,
+            "model": "front camera",
+            "megapixels": 8.5
+        }
+    },
+    {
+        "id": 3,
+        "name": "Samsung Galaxy 54",
+        "ram": {
+            "id": 3,
+            "type": "DDR5",
+            "gigabytes": 32
+        },
+        "battery": {
+            "id": 3,
+            "capacity": 9500.0
+        },
+        "cpu": {
+            "id": 3,
+            "on": false,
+            "cores": 16
+        },
+        "wifi": true,
+        "camera": {
+            "id": 3,
+            "model": "back camera",
+            "megapixels": 58.5
+        }
+    }
+]
